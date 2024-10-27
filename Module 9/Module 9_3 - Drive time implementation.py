@@ -37,6 +37,7 @@ class Car:
 
 
 carr = Car('ABC-123', 300)
+carr._travelled_distance = 2000
 carr._current_speed = 60
 carr.drive(1.5)
 

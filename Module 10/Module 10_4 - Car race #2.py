@@ -59,12 +59,12 @@ class Race :
 
     def race_finished(self):
         for i in range(self._total_cars) :
-            if self._list_of_cars[i].travelled_distance >= self._distance :
+            if self._list_of_cars[i].travelled_distance >= self._distance:
                 return True
 
         return False
 
-cars = [Car(0, 0)] * 10
+cars = [0] * 10
 for i in range(10) :
     individualMaxSpeed = random.randint(100, 200)
     cars[i] = Car(f"ABC-{i + 1}", individualMaxSpeed)
