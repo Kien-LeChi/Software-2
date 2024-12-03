@@ -21,6 +21,7 @@ class Book (Publication) :
 class Magazine (Publication) :
 
     def __init__(self, name, chief_editor):
+        # Publication.__init__(self, name)
         Publication.__init__(self, name)
         self._chief_editor = chief_editor
 
